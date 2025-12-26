@@ -14,7 +14,7 @@
         <style>
             .top-level-table {
                 display: flex;
-                flex-flow: column wrap;
+                flex-flow: column nowrap;
                 width: 99vw;
                 height: 99vh;
 
@@ -44,18 +44,18 @@
     </head>
     <body>
         <div class="top-level-table">
+            <h3>Schema Editor</h3>
             <div class="editor-container">
-                <h3>Schema Editor</h3>
-                <div id="schema-editor"></div>
+                <div id="schema-editor" style="overflow-y: auto;"></div>
             </div>
+            <h3>Editor Preview</h3>
             <div class="editor-container">
-                <h3>Editor Preview</h3>
                 <div id="editor-preview"></div>
                 The Editor Preview will be updated as you make changes in the Schema Editor
             </div>
         </div>
-        <script src="editor.js"></script>
-        <script src="production.js"></script>
+        <script src="/src/editor-legacy.js"></script>
+        <script src="presentation.js"></script>
         <!-- Bootstrap 4 -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

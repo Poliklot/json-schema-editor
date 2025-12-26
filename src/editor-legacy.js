@@ -309,3 +309,5 @@ SchemaEditor.prototype.updateSchema = function(schema, startval) {
     });
 }
 
+
+;try{globalThis.JSONSchemaEditor||=JSONSchemaEditor}catch(e){}
