@@ -45,6 +45,9 @@ var jsonMetaSchema = `{
                         "yaml"
                     ]
                 },
+                "options": {
+                    "type": "object"
+                },
                 "minLength": {
                     "type": "integer"
                 },
@@ -622,6 +625,9 @@ var jsonMetaSchema = `{
                                 "xml",
                                 "yaml"
                             ]
+                        },
+                        "options": {
+                            "type": "object"
                         },
                         "minLength": {
                             "type": "integer"
